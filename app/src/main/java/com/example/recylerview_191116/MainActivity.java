@@ -14,11 +14,11 @@ public class MainActivity extends AppCompatActivity implements RecylerViewAdapte
     RecyclerView recyclerView;
     RecylerViewAdapter recylerViewAdapter;
 
-    int[] images = {R.drawable.dp8, R.drawable.dp2, R.drawable.dp3, R.drawable.dp4,
-            R.drawable.dp2, R.drawable.dp, R.drawable.dp4, R.drawable.dp3,
-            R.drawable.dp5, R.drawable.dp6, R.drawable.dp7, R.drawable.dp8,
-            R.drawable.dp3, R.drawable.dp, R.drawable.dp2, R.drawable.dp7,
-            R.drawable.dp, R.drawable.dp4, R.drawable.dp8, R.drawable.dp2};
+   int[] images = {R.drawable.dp8, R.drawable.dp2, R.drawable.dp3, R.drawable.dp4,
+                   R.drawable.dp2, R.drawable.dp, R.drawable.dp4, R.drawable.dp3,
+                   R.drawable.dp5, R.drawable.dp6, R.drawable.dp7, R.drawable.dp8,
+                   R.drawable.dp3, R.drawable.dp, R.drawable.dp2, R.drawable.dp7,
+                   R.drawable.dp, R.drawable.dp4, R.drawable.dp8, R.drawable.dp2};
 
 
     @Override
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements RecylerViewAdapte
 
     @Override
     public void OnDeleteButtonClick(int position){
-        images.remove(position);
         recylerViewAdapter.notifyItemRemoved(position);
      }
 }
